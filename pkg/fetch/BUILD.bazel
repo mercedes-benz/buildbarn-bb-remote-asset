@@ -47,10 +47,11 @@ go_test(
         "authorizing_fetcher_test.go",
         "caching_fetcher_test.go",
         "http_fetcher_test.go",
+        "logging_fetcher_test.go",
         "validating_fetcher_test.go",
     ],
+    embed = [":fetch"],
     deps = [
-        ":fetch",
         "//internal/mock",
         "//pkg/proto/asset",
         "//pkg/qualifier",
